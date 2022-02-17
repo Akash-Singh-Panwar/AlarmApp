@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="412dp"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:id="@+id/ratingFrame"
+    android:background="#171717"
+    android:layout_gravity="center"
+    android:layout_centerVertical="true">
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:background="#171717"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <RatingBar
+        android:id="@+id/ratingStar"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#FF9E00"
+        android:rating="0"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/ratingDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ratingDone"
+        android:backgroundTint="#00CFFF"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        /></LinearLayout>
+</LinearLayout>
