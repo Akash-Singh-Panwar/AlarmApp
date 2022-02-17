@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainRelativeLayout"
+    tools:context=".MainActivity2"
+    android:background="#171717"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232323"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView1"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:id = "@+id/rating"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src = "@drawable/ic_baseline_star_rate_24"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/toolbar2"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/insideScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:showDividers="middle">
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#232323"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+        <ImageView
+            android:id = "@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_add_circle_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>
