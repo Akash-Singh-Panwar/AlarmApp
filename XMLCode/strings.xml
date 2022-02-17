@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlarmApp</string>
+    <string name="textView1">Wake Up</string>
+    <string name="customToastText">Alarm Added</string>
+    <string name="ratingDone">Done</string>
+    <string name = "stop">Stop</string>
+</resources>
